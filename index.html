@@ -158,8 +158,8 @@
   <!-- Inside <section class="products"> -->
 <div class="product">
   <img src="Red Engagement Tray.jpg" alt="Product">
-  <h3 id="redTrayName">Red Engagement Tray</h3>
-  <p>₹500</p>
+  <h3 id="redTrayName">Red Engagement Tray(Ring Box May Vary)</h3>
+  <p>₹600</p>
   QTY:<input type="number" id="qtyA" value="1" min="1" style="width: 25px;">
   <br>
   <input type="text" id="word1A" placeholder="Enter Groom name" maxlength="15" style="width: 120px;">
@@ -170,18 +170,18 @@
 </div>
   <div class="product">
     <img src="Pink Engagement Tray.jpg" alt="Product">
-    <h3>Pink Engagement Tray</h3>
-    <p>₹500</p>
+    <h3>Pink Engagement Tray(Ring Box May Vary)</h3>
+    <p>₹600</p>
     QTY:<input type="number" id="qtyB" value="1" min="1" style="width: 25px;">
-    <button class="btn" onclick="addToCart('Pink Engagement Tray', 500, parseInt(document.getElementById('qtyB').value))">Add to Cart</button>
-    <button class="btn" onclick="openSingleOrderForm('Pink Engagement Tray', 500, parseInt(document.getElementById('qtyB').value))">Order</button>
+    <button class="btn" onclick="addToCart('Pink Engagement Tray(Ring Box May Vary)', 600, parseInt(document.getElementById('qtyB').value))">Add to Cart</button>
+    <button class="btn" onclick="openSingleOrderForm('Pink Engagement Tray(Ring Box May Vary)', 600, parseInt(document.getElementById('qtyB').value))">Order</button>
   </div>
   <!-- ... Second product remains unchanged ... -->
 
 <div class="product">
   <img src="Yellow Engagement Tray.jpg" alt="Product">
   <h3 id="yellowTrayName">Yellow Engagement Tray</h3>
-  <p>₹500</p>
+  <p>₹600</p>
   QTY:<input type="number" id="qtyC" value="1" min="1" style="width: 25px;">
   <br>
   <input type="text" id="word1C" placeholder="Enter Groom name" maxlength="15" style="width: 120px;">
@@ -243,10 +243,10 @@
 
   if (!word1 || !word2) return alert("Enter both words for Red Tray");
 
-  const customName = `Red Engagement Tray (${word1} ❤️ ${word2})`;
+  const customName = `Red Engagement Tray(Ring Box May Vary) (${word1} ❤️ ${word2})`;
   document.getElementById('redTrayName').textContent = customName;
 
-  cart.push({ product: customName, price: 500, quantity: qty });
+  cart.push({ product: customName, price: 600, quantity: qty });
   updateCart();
   alert(`${customName} x${qty} added to cart!`);
 }
@@ -258,10 +258,10 @@ function orderCustomRedTray() {
 
   if (!word1 || !word2) return alert("Enter both words for Red Tray");
 
-  const customName = `Red Engagement Tray (${word1} ❤️ ${word2})`;
+  const customName = `Red Engagement Tray(Ring Box May Vary) (${word1} ❤️ ${word2})`;
   document.getElementById('redTrayName').textContent = customName;
 
-  currentSingleProduct = { product: customName, price: 500, quantity: qty };
+  currentSingleProduct = { product: customName, price: 600, quantity: qty };
   togglePopup('singleOrderPopup');
 }
 
@@ -275,7 +275,7 @@ function addCustomYellowTray() {
   const customName = `Yellow Engagement Tray (${word1} ❤️ ${word2})`;
   document.getElementById('yellowTrayName').textContent = customName;
 
-  cart.push({ product: customName, price: 500, quantity: qty });
+  cart.push({ product: customName, price: 600, quantity: qty });
   updateCart();
   alert(`${customName} x${qty} added to cart!`);
 }
@@ -290,7 +290,7 @@ function orderCustomYellowTray() {
   const customName = `Yellow Engagement Tray (${word1} ❤️ ${word2})`;
   document.getElementById('yellowTrayName').textContent = customName;
 
-  currentSingleProduct = { product: customName, price: 500, quantity: qty };
+  currentSingleProduct = { product: customName, price: 600, quantity: qty };
   togglePopup('singleOrderPopup');
 }
 
